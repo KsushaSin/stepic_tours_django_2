@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+{% include 'head.html' %}
+
+<body>
+
+{% include 'departures_list.html' %}
+  <main class="container">
+    <section class="mt-3 pb-5">
+      <h1 class="display-3 mt-4">{{ choisen_tour.title }} {{ choisen_tour.stars }}★</h1>
+      <!-- HERO -->
+      <p class="lead">{{ choisen_tour.country }}, {{ choisen_tour.nights }} ночей</p>
+      <img src="{{ choisen_tour.picture }}" class="w-75" alt="">
+      <p class="my-4 w-75">{{ choisen_tour.description }}</p>
+      <a href="#" class="btn btn-success btn-lg">Купить тур за {{ choisen_tour.price }}</a>
+    </section>
+  </main>
+
+{% include 'basement.html' %}
+
+</body>
+</html>
