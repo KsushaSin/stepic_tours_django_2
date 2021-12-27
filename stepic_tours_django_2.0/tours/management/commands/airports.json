@@ -1,0 +1,16 @@
+[
+    {
+        "code": "ATH",
+        "name": "Eleftherios Venizelos International Airport",
+        "country": "Greece",
+        "city": "Athens",
+        "length": "13123"
+    },
+    {
+        "code": "IST",
+        "name": "Ataturk Hava Limani Airport",
+        "country": "Turkey",
+        "city": "Istanbul",
+        "length": "9842"
+    }
+]

@@ -1,6 +1,7 @@
 import random
 import data
 from django.shortcuts import render
+from django.views.generic.base import TemplateView
 
 
 def main_view(request):
@@ -76,3 +77,10 @@ def tour_view(request, id: int):
     return render(request, 'tour.html', context={'choisen_tour': data.tours.get(id),
                                                  'departures': data.departures,
                                                  'title': data.title})
+class TourView(TemplateView):
+    template_name = 'tour.html'
+
+    def get_context_data(self, **kwargs):
+        return {'choisen_tour': data.tours.get(id),
+                                                 'departures': data.departures,
+                                                 'title': data.title}
